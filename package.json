@@ -1,0 +1,47 @@
+{
+  "author": "Jean-Paul S. Boodhoo",
+  "name": "@developwithpassion/create_object_iterator_js",
+  "description": "Create A Deep Object Iterator",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/register": "^7.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-mocha": "^6.2.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
+    "mocha": "^6.2.2",
+    "parcel": "^1.12.4",
+    "prettier": "^1.19.1",
+    "@developwithpassion/core_utils_js": "git+https://github.com/developwithpassion/core_utils_js.git",
+    "@developwithpassion/map_path_init_js": "git+https://github.com/developwithpassion/map_path_init_js.git"
+  },
+  "scripts": {
+    "build": "parcel build ./lib/index.js",
+    "pretty": "prettier --config-precedence prefer-file --write \"lib/**/*.js\"",
+    "lint": "eslint lib/**/*.js",
+    "test": "mocha --require @babel/register lib/**/*.spec.js"
+  },
+  "lint-staged": {
+    "lib/**/*.js": [
+      "yarn pretty",
+      "yarn lint",
+      "yarn build",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@developwithpassion/simple_object_iterator_js": "git+https://github.com/developwithpassion/simple_object_iterator_js.git"
+  }
+}
