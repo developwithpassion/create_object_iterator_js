@@ -629,13 +629,13 @@
 
 "@developwithpassion/arrays_js@git+https://github.com/developwithpassion/arrays_js.git":
   version "0.0.1"
-  resolved "git+https://github.com/developwithpassion/arrays_js.git#17c749a4ad5943f2e7e68b62eb400a85b88c823f"
+  resolved "git+https://github.com/developwithpassion/arrays_js.git#3dd12a6c23a6a3f531f7536049fb7aa0ed095f0e"
   dependencies:
     "@developwithpassion/curry_js" "git+https://github.com/developwithpassion/curry_js.git"
 
 "@developwithpassion/core_utils_js@git+https://github.com/developwithpassion/core_utils_js.git":
   version "0.0.1"
-  resolved "git+https://github.com/developwithpassion/core_utils_js.git#46dd9246445ec1ac2e996b4ac502ad78a3dce4fc"
+  resolved "git+https://github.com/developwithpassion/core_utils_js.git#7f6c634b154f17ce475b2ffcff1404273f0c24d5"
   dependencies:
     "@developwithpassion/arrays_js" "git+https://github.com/developwithpassion/arrays_js.git"
     "@developwithpassion/curry_js" "git+https://github.com/developwithpassion/curry_js.git"
